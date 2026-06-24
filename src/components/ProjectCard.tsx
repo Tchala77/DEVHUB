@@ -24,7 +24,19 @@ export default function ProjectCard({ project, onEdit, onDelete, showActions = t
 
   return (
     <div style={{ border: '1px solid #ccc', borderRadius: '8px', padding: '1rem', margin: '0.5rem', background: 'white' }}>
-      <img src={project.imageUrl} alt={project.title} style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '4px' }} />
+      <div style={{
+        width: '100%',
+        height: '200px',
+        background: '#e0e0e0',
+        borderRadius: '4px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: '#666',
+        fontSize: '1rem'
+      }}>
+        📷 {project.title}
+      </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h3>{project.title}</h3>
         <button onClick={handleToggle} style={{ background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer' }}>
