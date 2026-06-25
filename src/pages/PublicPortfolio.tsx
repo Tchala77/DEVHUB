@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getUserById } from '../services/authService';
 import { getProjects } from '../services/projectService';
-import CommentsSection from '../components/CommentsSection';
+//import CommentsSection from '../components/CommentsSection';
 import { useFavorites } from '../contexts/FavoritesContext';
 import { User } from '../types/User';
 import { Project } from '../types/Project';
